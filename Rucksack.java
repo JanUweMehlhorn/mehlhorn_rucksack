@@ -7,28 +7,28 @@ public class Rucksack
     private boolean reflektierend;
     private int preis;
 
-    public Rucksack(String neuFarbe, boolean neuWasserdicht, boolean neuReflektierend, int neuVolumen, int neuPreis)
+    public Rucksack(String farbe, boolean wasserdicht, boolean reflektierend, int volumen, int preis)
     {
-        setFarbe(neuFarbe);
-        setWasserdicht(neuWasserdicht);
-        setReflektierend(neuReflektierend);
-        setVolumen(neuVolumen);
-        setPreis(neuPreis);
+        setFarbe(farbe);
+        setWasserdicht(wasserdicht);
+        setReflektierend(reflektierend);
+        setVolumen(volumen);
+        setPreis(preis);
     } 
 
-    public Rucksack(String neuFarbe, boolean neuWasserdicht,int neuVolumen)
+    public Rucksack(String farbe, boolean wasserdicht,int volumen)
     {
-        setFarbe(neuFarbe);
-        setWasserdicht(neuWasserdicht);
-        setVolumen(neuVolumen);
+        setFarbe(farbe);
+        setWasserdicht(wasserdicht);
+        setVolumen(volumen);
         setReflektierend(false);
         setPreis(60);
     }
 
-    public Rucksack(String neuFarbe, boolean neuWasserdicht)
+    public Rucksack(String farbe, boolean wasserdicht)
     {
-        setFarbe(neuFarbe);
-        setWasserdicht(neuWasserdicht);
+        setFarbe(farbe);
+        setWasserdicht(wasserdicht);
         setReflektierend(false);
         setVolumen(1);
         setPreis(60);
@@ -36,25 +36,25 @@ public class Rucksack
 
     /* Dieser Konstruktor kann wegen gleicher Signatur nicht implementiert werden
 
-    public Rucksack(String neuFarbe, boolean neuReflektierend, int neuVolumen)
+    public Rucksack(String Farbe, boolean Reflektierend, int Volumen)
     {
-    setFarbe(neuFarbe);
-    setReflektierend(neuReflektierend);
-    setVolumen(neuVolumen);
+    setFarbe(Farbe);
+    setReflektierend(Reflektierend);
+    setVolumen(Volumen);
     }
      */
-    public  Rucksack(String neuFarbe, int neuVolumen, boolean neuReflektierend) 
+    public  Rucksack(String farbe, int volumen, boolean reflektierend) 
     {
-        setFarbe(neuFarbe);
+        setFarbe(farbe);
         setWasserdicht(false);
-        setReflektierend(neuReflektierend);
-        setVolumen(neuVolumen);
+        setReflektierend(reflektierend);
+        setVolumen(volumen);
         setPreis(60);
     }
 
-    public Rucksack(String neuFarbe)                                                                                  
+    public Rucksack(String farbe)                                                                                  
     {
-        setFarbe(neuFarbe);
+        setFarbe(farbe);
         setWasserdicht(false);
         setReflektierend(false);
         setVolumen(1);
@@ -69,7 +69,7 @@ public class Rucksack
         setVolumen(1);
         setPreis(60);
     }
-    
+
     public String getFarbe()
     {
         return this.farbe;
