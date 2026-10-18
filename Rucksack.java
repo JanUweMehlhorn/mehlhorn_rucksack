@@ -4,6 +4,7 @@ public class Rucksack
     private String farbe;
     private int volumen;
     private boolean wasserdicht;
+   
     public String getFarbe()
     {
         return this.farbe;
@@ -17,5 +18,20 @@ public class Rucksack
     public boolean getWasserdicht()
     {
         return this.wasserdicht;
+    }
+
+    public void setFarbe(String farbe)
+    {
+        this.farbe = farbe;
+    }
+
+    public void setVolumen(int volumen)
+    {
+        this.volumen = volumen;
+    }
+
+    public void setWasserdicht(boolean wasserdicht)
+    {
+        this.wasserdicht = wasserdicht;
     }
 }
