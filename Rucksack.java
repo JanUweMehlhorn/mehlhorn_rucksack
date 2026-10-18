@@ -41,4 +41,8 @@ public class Rucksack
     {
         this.wasserdicht = wasserdicht;
     }
+    public void printRucksack()
+    {
+        System.out.println(farbe + " Rucksack: " + volumen + " Liter - " + wasserdicht);
+    }
 }
