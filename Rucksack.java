@@ -122,6 +122,14 @@ public class Rucksack
 
     public void printRucksack()
     {
-        System.out.println(farbe + " Rucksack: " + volumen + " Liter - " + wasserdicht);
+        if (wasserdicht == true)
+        {
+            System.out.println("Rucksack: " + farbe + " - " + volumen + " Liter - " + "wasserdicht");
+        }
+        else
+        {
+            System.out.println("Rucksack: " + farbe + " - " + volumen + " Liter - " + "nicht wasserdicht");
+        }
+        
     }
 }
