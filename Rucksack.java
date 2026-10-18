@@ -102,7 +102,15 @@ public class Rucksack
 
     public void setVolumen(int volumen)
     {
-        this.volumen = volumen;
+        if ((volumen >= 1) && (volumen < 150))
+        {
+            this.volumen = volumen;
+        }
+        else
+        {
+            System.out.println("Fehler: das Volumen muss zwischen 1 und 150 sein!");
+            this.volumen = 1;
+        }
     }
 
     public void setWasserdicht(boolean wasserdicht)
@@ -130,6 +138,6 @@ public class Rucksack
         {
             System.out.println("Rucksack: " + farbe + " - " + volumen + " Liter - " + "nicht wasserdicht");
         }
-        
+
     }
 }
